@@ -13,3 +13,6 @@ window.addEventListener('scroll', function () {
   let offset = window.pageYOffset
   parallax.style.backgroundPositionY = offset * 0.7 + 'px'
 })
+
+let vh = window.innerHeight * 0.01
+document.documentElement.style.setProperty('--vh', `${vh}px`)
