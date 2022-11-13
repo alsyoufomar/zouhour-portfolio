@@ -1,0 +1,53 @@
+.projects {
+  background: linear-gradient(to top, #272727ba, #000000cc),
+    url(../images/pexels-negative-space-92904.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--clr-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 100vh;
+}
+.projects__body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  padding-top: 0;
+  gap: 3rem;
+}
+.projects__card {
+  flex: 1 1 20rem;
+
+  width: 40%;
+  padding: 2em;
+}
+.projects__title {
+  margin: 1em;
+}
+.projetcs__game__title,
+.projects__website__title {
+  margin-left: 1em;
+}
+.projects__btns {
+  display: flex;
+  justify-content: center;
+  border: 1.5px solid var(--clr-light);
+  border-radius: 5px;
+  color: var(--clr-light);
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .projects__body {
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .projects__card {
+    padding: 0;
+  }
+}

@@ -1,0 +1,49 @@
+.about {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  padding: 3em;
+  gap: 1rem;
+  background-color: var(--clr-light);
+}
+
+.about-card {
+  flex: 1 1 15rem;
+
+  height: auto;
+  max-width: 391.79px;
+  padding: 1.5em;
+  border: var(--clr-dark) solid 2px;
+  font-weight: var(--fw-reg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.about__skills {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.skills__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+}
+
+.card--title {
+  position: relative;
+}
+
+@media only screen and (max-width: 400px) {
+  .about {
+    padding: 1.5rem;
+  }
+}
